@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <h1>Market Simulator</h1>
+            <p>Cash Balance: ₹<span id="cashBalance">1000.00</span></p>
+            <p>Assets Owned: <span id="assetsOwned">0</span></p>
+            <p id="return">Total Return: ₹ 0.00</p>
+        </div>
+        
+        <div class="controls">
+            <label for="assetQuantity">Quantity:</label>
+            <input type="number" id="assetQuantity" min="1" />
+        </div>
+        <div class="buy">
+            <button id="buy">Buy</button>
+        </div>
+           <div class="sell" ><button id="sell">Sell</button>
+        </div>
+        
+        <canvas id="marketChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1f8fc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard {
+    background-color: rgb(158, 255, 226);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.146);
+    width: 100%;
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls label {
+    margin-bottom: 10px;
+}
+
+.controls input {
+    padding: 10px;
+    color: #000000;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.buy button{
+    padding: 10px;
+    width: 100px;
+    background-color: #00ff33;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.sell button{
+    padding: 10px;
+    width: 100px;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+
+}
+
+.controls button:hover {
+    background-color: #ffffff;
+}
+
+#marketChart {
+    width: 100%;
+    background-color: #ffffff;
+    max-width: 800px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .dashboard {
+        width: 45%;
+    }
+
+    .controls {
+        width: 45%;
+    }
+}
